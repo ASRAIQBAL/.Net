@@ -4,6 +4,7 @@
 using ConsoleApp1;
 using System;
 using static ConsoleApp1.FindAndRemoveDuplicate;
+using static System.Net.Mime.MediaTypeNames;
 
 public class HelloWorld
 {
@@ -67,11 +68,32 @@ public class HelloWorld
         Console.WriteLine(FindMiss.FindMissingNumberByHashset([1,2, 3, 4,6, 7]));
         Console.WriteLine(FindMiss.FindMissingNumberByHashset([1,3, 4, 5, 6, 7],8));
         Console.WriteLine(FindMiss.FindMissingNumberSort([1,2, 3, 5, 6, 7]));
+        Console.WriteLine('\n');
+
+        var CharFreq = new CountCharacterFequencyUingDictionary();
+        //Console.WriteLine(CharFreq.CountCharacterFrequency("You Will Achieve what you want"));
+        var result = CharFreq.CountCharacterFrequency("You Will Achieve what you want");
+        foreach (var item in result)
+        {
+            Console.WriteLine($"{item.Key} : {item.Value}");
+        }
+        Console.WriteLine('\n');
 
 
 
-
-
+        var RecurrVowel = new ReoccuringvowelsWithOrWithOutNestedLoop();
+        //Console.WriteLine(CharFreq.CountCharacterFrequency("You Will Achieve what you want"));
+        var result1 = RecurrVowel.recurringVowelsWithoutLoop("You Will Achieve what you want");
+        foreach (var item in result1)
+        {
+            Console.WriteLine($"{item.Key} : {item.Value}");
+        }
+        var result2 = RecurrVowel.recurringVowelsWithLoop("Siraj is Stupid nonsense");
+        foreach (var item in result2)
+        {
+            Console.WriteLine($"{item.Key} : {item.Value}");
+        }
+        Console.WriteLine('\n');
 
     }
 
