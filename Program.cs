@@ -42,15 +42,14 @@ public class HelloWorld
         Console.WriteLine('\n');
 
 
-        var Rev = new Reverse();
-        Console.WriteLine(Rev.ReverseString("BUSHRA"));
-        Console.WriteLine(Rev.ReverseStringwithUserInput());
-        Console.WriteLine(Rev.ReverseStringUsingList());
-        Console.WriteLine(Rev.ReverseStringUsingStack());
-        Console.WriteLine(Rev.ReverseUsingQueue());
-        Console.WriteLine('\n');
-        Console.WriteLine('\n');
-
+        //var Rev = new Reverse();
+        //Console.WriteLine(Rev.ReverseString("BUSHRA"));
+        //Console.WriteLine(Rev.ReverseStringwithUserInput());
+        //Console.WriteLine(Rev.ReverseStringUsingList());
+        //Console.WriteLine(Rev.ReverseStringUsingStack());
+        //Console.WriteLine(Rev.ReverseUsingQueue());
+        //Console.WriteLine('\n');
+        //Console.WriteLine('\n');
 
 
 
@@ -59,6 +58,16 @@ public class HelloWorld
         Console.WriteLine(Dup.FindDuplicateIntegerbyHashset([2, 7, 11, 15, 4, 7, 2, 15, 15]));
         Console.WriteLine(Dup.FindDuplicatebyLinQ());
         Console.WriteLine(Dup.FindDuplicatebySorting());
+        Console.WriteLine('\n');
+
+
+        var FindMiss = new FindMissingNumbercs();
+        Console.WriteLine(FindMiss.FindMissingNumberbySumFormula([1, 2, 4, 5,]));
+        Console.WriteLine(FindMiss.FindMissingNumberByXoR([1, 2, 3, 4, 5, 6, 7, 9]));
+        Console.WriteLine(FindMiss.FindMissingNumberByHashset([1,2, 3, 4,6, 7]));
+        Console.WriteLine(FindMiss.FindMissingNumberByHashset([1,3, 4, 5, 6, 7],8));
+        Console.WriteLine(FindMiss.FindMissingNumberSort([1,2, 3, 5, 6, 7]));
+
 
 
 
