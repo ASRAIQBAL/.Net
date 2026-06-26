@@ -1,3 +1,3 @@
 # DotNetCodingQueries
-# OOP Implementation
-# Data Structure
+## OOP Implementation
+## Data Structure
